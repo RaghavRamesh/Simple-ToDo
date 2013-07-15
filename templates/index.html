@@ -2,6 +2,7 @@
 <html ng-app>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
 	<script type="text/javascript" src="C:/workspace/Simple-ToDo/static/js/todo.js"></script>
 
 	<link rel="stylesheet" href="C:/workspace/Simple-ToDo/static/css/bootstrap.css">
@@ -21,6 +22,7 @@
 		<button class="btn" ng-click="addTodo()"><i class="icon-plus"></i>Add</button>
 	</form>
 
+	<button class="btn-large" ng-click="clearCompleted()"><i class="icon-trash"></i>Clear Completed</button>
 </div>
 
 </body>
