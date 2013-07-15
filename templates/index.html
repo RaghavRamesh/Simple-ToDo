@@ -2,13 +2,25 @@
 <html ng-app>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-	<script type="text/javascript" src="C:/workspace/todo/static/js/todo.js"></script>
+	<script type="text/javascript" src="C:/workspace/Simple-ToDo/static/js/todo.js"></script>
 
-	<link rel="stylesheet" href="C:/workspace/todo/static/css/bootstrap.css">
+	<link rel="stylesheet" href="C:/workspace/Simple-ToDo/static/css/bootstrap.css">
+	<link rel="stylesheet" href="C:/workspace/Simple-ToDo/static/css/todo.css">
 </head>
 <body>
 <div ng-controller="TodoCtrl">
-	{{ totalTodos }}
+	<h2>Total todos: {{ totalTodos }}</h2>
+	<ul class="unstyled">
+		<li ng-repeat="todo in todos">
+			<input type="checkbox" ng-model="todo.done">
+			<span class="done-{{todo.done}}">{{ todo.text }}</span>
+		</li>
+	</ul>
+	<form class="form-horizontal">
+		<input type="text" ng-model="formTodoText" ng-model-instant>
+		{{ formTodoText }}
+	</form>
+
 </div>
 
 </body>
