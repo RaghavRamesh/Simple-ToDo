@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.3.1
+ * Bootstrap v2.3.2
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -2275,7 +2275,7 @@ table th[class*="span"],
 
 [class^="icon-"],
 [class*=" icon-"] {
-  display: inline-block;
+  display: inline-block;    
   width: 14px;
   height: 14px;
   margin-top: 1px;
@@ -3009,6 +3009,15 @@ table th[class*="span"],
   display: block;
 }
 
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
@@ -3349,7 +3358,7 @@ input[type="button"].btn-block {
 }
 
 .btn-primary {
-  color: #ff8fff;
+  color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
   *background-color: #0044cc;
